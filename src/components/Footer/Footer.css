@@ -1,77 +1,76 @@
-.FooterDiv{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    flex-flow: row wrap;
-    min-height: 25vh;
-    max-height: 20vh;
-    background-color: rgba(230, 229, 229, 0.41);
+.FooterDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  min-height: 25vh;
+  max-height: 20vh;
+  background-color: rgba(230, 229, 229, 0.41);
 }
-.Footer_Headings{
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    flex-flow: row wrap;
-    width: 25%;
+.Footer_Headings {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 25%;
 }
-.Footer_Headings h3{
-    color: #9DAFBD;
+.Footer_Headings h3 {
+  color: #9dafbd;
 }
-.Footer_Buttons{
-    display: flex;
-    align-content: center;
-    justify-content:space-evenly;
-    width: 30%;
-    
+.Footer_Buttons {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 30%;
 }
-.Footer_Buttons .SignUpButton{
-    background-color: #4699C2;
-    color: white;
-    border-radius: 30px;
-    height: 30px;
-    width: 35%;
+.Footer_Buttons .SignUpButton {
+  background-color: #4699c2;
+  color: white;
+  border-radius: 30px;
+  height: 30px;
+  width: 35%;
 }
-.Footer_Buttons .LanguagesList{
-    background-color: rgb(255, 255, 255);    
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #4699C2;
-    border-radius: 30px;
-    height: 30px;
-    width: 35%;
+.Footer_Buttons .LanguagesList {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4699c2;
+  border-radius: 30px;
+  height: 30px;
+  width: 35%;
 }
-.Footer_Buttons .LanguagesList .LanguagesSelector{
-    display: block;
-    background-color: #FFFF;    
-    border-style: double;
-    border-color: #4699C2;
-    border-radius: 30px;
-    height: 90%;
-    width: 90%;
+.Footer_Buttons .LanguagesList .LanguagesSelector {
+  display: block;
+  background-color: #ffff;
+  border-style: double;
+  border-color: #4699c2;
+  border-radius: 30px;
+  height: 90%;
+  width: 90%;
 }
-.FooterDiv .Logo{
-    height: 4%;
-    width: 4%;
-    min-width: 50px;
-    min-height: 50px;
-    position: relative;
-    left: 10%;
+.FooterDiv .Logo {
+  height: 4%;
+  width: 4%;
+  min-width: 50px;
+  min-height: 50px;
+  position: relative;
+  left: 10%;
 }
 @media only screen and (max-width: 600px) {
-    .FooterDiv{
-        flex-direction: column;
-    }
-    .Footer_Buttons{
-        width: 100%;
-    }
-    .Footer_Headings{
-        width: 55%;
-    }
-    .FooterDiv .logo{
-        height: 15%;
-        width: 15%;
-        left: 0%;
-    }
+  .FooterDiv {
+    flex-direction: column;
+  }
+  .Footer_Buttons {
+    width: 100%;
+  }
+  .Footer_Headings {
+    width: 55%;
+  }
+  .FooterDiv .logo {
+    height: 15%;
+    width: 15%;
+    left: 0%;
+  }
 }
