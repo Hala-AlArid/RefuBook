@@ -70,7 +70,7 @@
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 865px) {
   .FormBody {
     background-color: white;
     height: 50%;
