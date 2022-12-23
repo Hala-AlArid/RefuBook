@@ -1,12 +1,14 @@
 .FormBody {
   background-color: #e9fbff;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
   box-shadow: 0 5px 10px rgb(0 0 0 / 0.3);
   scale: 0.9;
+  width: 100%;
 }
 .Content {
   width: 40%;
@@ -26,12 +28,13 @@
   font-weight: lighter;
   font-size: 2.3vh;
 }
-#form{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
-#email, #message {
+#email,
+#message {
   border: 0.5px solid;
   border-radius: 10px;
   border-color: #8b8f9c6b;
@@ -45,23 +48,54 @@
   height: 40vh;
   margin-top: 5px;
 }
-#submit{
-    background-color: #4699C2;
-    color: white;
-    width: 18vh;
-    height: 5vh;
-    border-radius: 40px;
-    margin-bottom: 10px;
-    margin-top: 15px;
+#submit {
+  background-color: #4699c2;
+  color: white;
+  width: 18vh;
+  height: 5vh;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
-.IconsList{
+.IconsList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 30%;
+}
+.Icon {
+  color: #4699c2;
+  scale: 1.5;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .FormBody {
+    background-color: white;
+    height: 50%;
+  }
+  .Content {
+    width: 100%;
     display: flex;
-    flex-flow: row wrap;
-}
-.Icon{
-    color: #4699C2;
-    scale: 1.5;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    margin-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Content h1 {
+    font-size: 5vh;
+  }
+  .Content h3 {
+    text-align: center;
+  }
+  #form {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .IconsList {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
 }
