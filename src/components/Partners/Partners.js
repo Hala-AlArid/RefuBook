@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Partners.css";
 import carousel from "../../images/carousel.png"
@@ -25,3 +26,4 @@ function Partners (){
 };
 
 export default Partners;
+
