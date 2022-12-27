@@ -1,11 +1,12 @@
-import React from 'react';
-import Stories from "../../components/Stories/Stories";
-import "../../App.css";
+
+import React from "react";
+import NavBar from "../../components/NavBar/NavBar"
 
 function Home (){
-    return <div >
-        <Stories />
+    return <div>
+        <NavBar />
     </div>
 };
 
 export default Home;
+
