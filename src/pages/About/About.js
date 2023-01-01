@@ -1,13 +1,15 @@
 import React from "react";
 import "./About.css";
+import { NavLink } from "react-router-dom";
 import NavBar from "../../components/NavBar/NavBar";
-// import Testemonials from "../../components/Testimonials/Testimonials";
-// import Partners from "../../components/Partners/Partners";
-// import Footer from "../../components/Footer/Footer";
+import Testemonials from "../../components/Testimonials/Testimonials";
+import Partners from "../../components/Partners/Partners";
+import Footer from "../../components/Footer/Footer";
+import Team from "../../components/Team/Team";
 
 function About(){
     return (
-        <div className="About">
+        <div className="About flex flex-col gap-8">
             <header className="about-header">
             <NavBar/>
             </header>
@@ -24,55 +26,28 @@ function About(){
                 <button type="submit"><b>Lebanon</b></button>
                 </div>
                 <div className="team-members flex justify-center items-center flex-wrap gap-32">
-                    {/* this should change in order to render team members from firebase */}
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
-                    <div className="member">
-                        <h3>Emily Jørgensen</h3>
-                        <p>Author at Panoply Store</p>
-                    </div>
+                    <Team/>
+                    <Team/>
+                    <Team/>
+                    <Team/>
+                    <Team/>
+                    <Team/>
+                    <Team/>
+                    <Team/>
+                    <Team/>
+                    <Team/>
                 </div>
             </container>
-            <container className="testemonials"><h1>This is Testemonials</h1></container>
-            <container className="partners"><h1>This is Partners</h1></container>
+            <Testemonials/>
+            <Partners/>
             <container className="call-to-action">
                 {/* icon */}
                 <h1>Share your story, help others and get help from others</h1>
                 <p className="w-2/4">But Brooke Chaffin and Catherine Connors are looking to change that with the introduction of Maverick, 
                     a social network that connects young girls with female mentors to express their creativity in a safe space.</p>
-                <button type="submit"><b>Sign Up</b></button>
+                    <NavLink to="/signup"><button type="submit" className="Footer_Buttons sm:w-28 md:w-32 text-center text-white p-1 rounded-full bg-sky-600 hover:text-sky-600 hover:bg-white hover:border-sky-600 border">Sign Up</button></NavLink>
             </container>
-            <container className="footer"><h1>This is Footer</h1></container>
+            <Footer/>
         </div>
     );
 }

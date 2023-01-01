@@ -1,53 +1,23 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
+import Testimonial from "./Testimonial";
 import WorldMap from "../../images/world_map1.jpg"
 
-function Testimonial(){
+function Testimonials(){
     return (
-        <div className="flex justify-between items-center w-screen m-10">
+        <div className="flex md:flex-row flex-col justify-center items-center">
             <div>
                 <img src={WorldMap}  alt="WorldMap"/>
             </div>
             <div className="flex w-1/2">
             <Carousel showArrows={false} enableAutoPlay className="flex justify-center">
-            <div className="flex flex-col space-y-2 justify-center items-left text-left">
-                <p className="w-1/2">Two lines of a short testimonial from someone want to say something, and can say more to explain.</p>
-                <div>
-                    <h3 className="text-gray-500">Louis Li,</h3>
-                    <h3 className="text-gray-500">Trainer at Recoded</h3>
-                </div>
+                <Testimonial/>
+                <Testimonial/>
+                <Testimonial/>
+                <Testimonial/>
+            </Carousel>
             </div>
-            <div className="flex flex-col space-y-2 justify-center items-left text-left">
-                <p className="w-1/2">Two lines of a short testimonial from someone want to say something, and can say more to explain.</p>
-                <div>
-                    <h3 className="text-gray-500">Louis Li,</h3>
-                    <h3 className="text-gray-500">Trainer at Recoded</h3>
-                </div>
-            </div>
-            <div className="flex flex-col space-y-2 justify-center items-left text-left">
-                <p className="w-1/2">Two lines of a short testimonial from someone want to say something, and can say more to explain.</p>
-                <div>
-                    <h3 className="text-gray-500">Louis Li,</h3>
-                    <h3 className="text-gray-500">Trainer at Recoded</h3>
-                </div>
-            </div>
-            <div className="flex flex-col space-y-2 justify-center items-left text-left">
-                <p className="w-1/2">Two lines of a short testimonial from someone want to say something, and can say more to explain.</p>
-                <div>
-                    <h3 className="text-gray-500">Louis Li,</h3>
-                    <h3 className="text-gray-500">Trainer at Recoded</h3>
-                </div>
-            </div>
-            <div className="flex flex-col space-y-2">
-                <p className="w-1/2">Two lines of a short testimonial from someone want to say something, and can say more to explain.</p>
-                <div>
-                    <h3 className="text-gray-500">Louis Li,</h3>
-                    <h3 className="text-gray-500">Trainer at Recoded</h3>
-                </div>
-            </div>
-                </Carousel>
-                </div>
         </div>
     )
 }
-export default Testimonial;
+export default Testimonials;

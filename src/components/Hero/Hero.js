@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Hero.css";
 import homepage from "../../images/homepage.png";
 
@@ -10,7 +11,8 @@ function Hero (){
             <h1 className="text-7xl font-black refubook pb-2">Refubook</h1>
             <h2 className="text-6xl font-medium express pb-6 w-60 text-rose-300">Express Freely</h2>
             <p className="text-base font-light w-80">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-            <button type="button" className="button w-36 bg-sky-600 rounded-full mt-8 mb-10	"><p className="text-xl font-bold pb-3 pt-2 text-white text-center">Sign up</p></button>
+           
+            <NavLink to="/signup"><button type="submit" className="button sm:w-28 md:w-32 text-center text-xl font-bold text-white py-2 px-6 rounded-full bg-sky-600 hover:text-sky-600 hover:bg-white hover:border-sky-600 border">Sign Up</button></NavLink>
         </div>
         <div>
             <img src={homepage} alt="home page graphic"/>

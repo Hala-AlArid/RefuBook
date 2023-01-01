@@ -1,12 +1,10 @@
 import React from 'react';
 import ContactForm from '../../components/ContactForm/ContactForm';
-import NavBar from '../../components/NavBar/NavBar';
 import './Contact.css';
 
 function Contact() {
   return (
-    <div className="Page">
-      <NavBar/>
+    <div className='bg-[#70CDD6]'>
       <ContactForm />
     </div>
   );

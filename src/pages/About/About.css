@@ -15,11 +15,11 @@
 }
 
 .about-header{
-    background-image: url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?cs=srgb&dl=pexels-fauxels-3184418.jpg&fm=jpg&_gl=1*3x088b*_ga*MTkzODI3NzgzMS4xNjY0OTc5ODkz*_ga_8JE65Q40S6*MTY3MTg5NDc2OC4xMC4xLjE2NzE4OTQ4MjEuMC4wLjA.
+    /* background-image: url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?cs=srgb&dl=pexels-fauxels-3184418.jpg&fm=jpg&_gl=1*3x088b*_ga*MTkzODI3NzgzMS4xNjY0OTc5ODkz*_ga_8JE65Q40S6*MTY3MTg5NDc2OC4xMC4xLjE2NzE4OTQ4MjEuMC4wLjA.
     );
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     height: 75vh;
 }
 
@@ -42,19 +42,6 @@
 .team-btns button:hover{
     background-color: #025594;
     color: white;
-}
-
-.member{
-    cursor: pointer;
-}
-
-.member h3{
-    color: #025594;
-    font-weight: bold;
-}
-
-.member p{
-    color: rgb(2, 85, 148);
 }
 
 

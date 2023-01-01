@@ -1,18 +1,10 @@
 .FormBody {
-  background-color: #e9fbff;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   border-radius: 50px;
   box-shadow: 0 5px 10px rgb(0 0 0 / 0.3);
   scale: 0.9;
   width: 100%;
 }
-.Content {
-  width: 40%;
-}
+
 .Content h1 {
   color: #4699c2;
   font-size: 10vh;
