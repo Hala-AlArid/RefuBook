@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-// import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../../components/NavBar/NavBar";
 // import Testemonials from "../../components/Testimonials/Testimonials";
 // import Partners from "../../components/Partners/Partners";
 // import Footer from "../../components/Footer/Footer";
@@ -9,7 +9,7 @@ function About(){
     return (
         <div className="About">
             <header className="about-header">
-            <h1>This is Navbar</h1>
+            <NavBar/>
             </header>
             <container className="story m-12">
                 <h1 className="text-5xl"><b>Our Story</b></h1>

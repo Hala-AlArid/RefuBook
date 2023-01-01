@@ -1,6 +1,6 @@
 import React from 'react';
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
+// import { BsTwitter, BsInstagram } from 'react-icons/bs';
+// import { FaFacebookF } from 'react-icons/fa';
 import Img from './FormImg.png';
 import './ContactForm.css';
 
@@ -22,9 +22,9 @@ function ContactForm() {
           <input id="submit" type="submit" value="Send" />
         </form>
         <div className="IconsList">
-          <BsTwitter className="Icon" />
+          {/* <BsTwitter className="Icon" />
           <BsInstagram className="Icon" />
-          <FaFacebookF className="Icon" />
+          <FaFacebookF className="Icon" /> */}
         </div>
       </div>
     </div>
