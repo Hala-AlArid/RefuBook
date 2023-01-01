@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function SignIn() {
   return (
@@ -49,7 +50,7 @@ function SignIn() {
             <div className="text-[#70CDD6]  font-extrabold font-['Roboto']  text-lg">
               Already a member?
             </div>
-            <div className="text-[#4699C2] ">Sign in</div>
+            <div className="text-[#4699C2] "><NavLink to="/signin"><span className='cursor-pointer'>Sign in</span></NavLink></div>
           </div>
         </div>
         <div className="grid mt-6 z-10 md:hidden">
