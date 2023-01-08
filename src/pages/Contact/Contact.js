@@ -4,7 +4,7 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <div className='bg-[#70CDD6]'>
+    <div className='Page'>
       <ContactForm />
     </div>
   );

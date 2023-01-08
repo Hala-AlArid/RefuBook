@@ -1,16 +1,17 @@
+
 import React from 'react';
-import { BsTwitter, BsInstagram} from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
-import NavBar from "../NavBar/NavBar";
+import { BsTwitter, BsInstagram } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
 import Img from './FormImg.png';
 import './ContactForm.css';
+import NavBar from '../NavBar/NavBar';
 
 function ContactForm() {
   return (
-    <div className="FormBody bg-[#e9fbff] flex flex-col gap-14 justify-center items-center">
+    <div className="FormBody">
       <NavBar/>
-      <div className="Content flex justify-center mt-16">
-        <div>
+      <img src={Img} alt="illustration" />
+      <div className="Content">
         <h1>Get in Touch</h1>
         <h3>
           But Brooke Chaffin and Catherine Connors are looking to change that
@@ -28,8 +29,6 @@ function ContactForm() {
           <BsInstagram className="Icon" />
           <FaFacebookF className="Icon" />
         </div>
-        </div>
-        <div><img src={Img} alt="illustration mt-16" /></div>
       </div>
     </div>
   );
