@@ -8,7 +8,7 @@ import "./NavBar.css"
 
 function NavBar (){
     return <div className="w-full h-8">
-        <nav className="w-11/12 grid grid-cols-2 m-auto pt-9 flex items-center place-content-between content-center">
+        <nav className="w-11/12 grid grid-cols-2  pt-9 flex items-center place-content-between content-center">
             <div className="grid grid-cols-2 gap-x-0 flex justify-self-start">
                 <img className="px-4 justify-self-end" src={Small} alt='logo'/>
                 <img className="p-0 justify-self-start" src={Refubook} alt='logo'/>
