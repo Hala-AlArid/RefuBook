@@ -27,15 +27,6 @@ function About(){
                 </div>
                 <div className="team-members flex justify-center items-center flex-wrap gap-32">
                     <Team/>
-                    <Team/>
-                    <Team/>
-                    <Team/>
-                    <Team/>
-                    <Team/>
-                    <Team/>
-                    <Team/>
-                    <Team/>
-                    <Team/>
                 </div>
             </container>
             <Testemonials/>

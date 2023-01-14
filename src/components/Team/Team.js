@@ -2,6 +2,7 @@ import React from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collection, query as fsQuery} from "firebase/firestore";
 import { db } from "../../firebase/firebase";
+import TeamMember from "./TeamMember";
 
 function Team(){
     const query = fsQuery(
@@ -21,10 +22,7 @@ function Team(){
     return (
         <div>
             {team.docs.map((doc) => (
-                <div key={doc.id} id={doc.id} className="member cursor-pointer">
-                <h3 className="font-bold text-[#025594]">{doc.data().member_name}</h3>
-                <p className="text-[#025594]">{doc.data().position}</p>
-            </div>
+            <TeamMember key={doc.id} id={doc.id} name = {doc.data().member_name} position = {doc.data().position}/>
             ))}
         </div>
     );
