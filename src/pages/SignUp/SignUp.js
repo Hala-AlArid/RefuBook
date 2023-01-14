@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { signInWithPopup } from 'firebase/auth';
 import { NavLink, useNavigate } from 'react-router-dom';
 import {auth, provider, FBprovider} from "../../firebase/firebase";
-import NavBar from "../../components/NavBar/NavBar"
+import NavBar from "../../components/NavBar/NavBar";
 
 function SignIn() {
 
@@ -55,6 +55,7 @@ const handleFBClick =()=>{
 
         <button type="submit">Login</button>
       </form> */}
+
        
          <button className="place-self-center h-10 bg-[#EB5757] text-white px-14 py-2 rounded-3xl m-5 border-2 border-[#EB5757] hover:bg-white hover:text-[#EB5757]" type='submit' onClick={handleClick}><i className="fa-brands fa-google"> </i></button>
         
