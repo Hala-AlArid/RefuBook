@@ -1,16 +1,11 @@
 import React from "react";
-import carousel from "../../images/carousel.png";
 
-function Partner(){
+function Partner(props){
     return (
-        <div className="flex justify-center flex-wrap flex-row gap-6">
-        <img src={carousel} alt='carousel'/>
-        <img src={carousel} alt='carousel'/>
-        <img src={carousel} alt='carousel'/>
-        <img src={carousel} alt='carousel'/>
-        <img src={carousel} alt='carousel'/>
-        <img src={carousel} alt='carousel'/>
-    </div>
+          <div key={props.key} id={props.id} className="flex justify-center flex-wrap flex-row gap-6">
+              <a href={props.website} className="flex justify-center"><img className="w-[25%] text-center" src={props.img} alt='carousel'/></a>
+          </div>
+
     );
 }
 
