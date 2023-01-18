@@ -3,7 +3,7 @@ import ProfileInfo from "../../components/ProfileInfo/ProfileInfo";
 
 function Profile(){
     return (
-        <div className='bg-[#70CDD6]'>
+        <div className='Page'>
             <ProfileInfo/>
         </div>
       );
