@@ -1,0 +1,62 @@
+.ProfileBody {
+    background: rgb(238,252,255);
+    background: linear-gradient(72deg, rgba(238,252,255,1) 37%, rgba(255,255,255,1) 38%);    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.3);
+    scale: 0.9;
+    width: 100%;
+    margin: 20px;
+    padding: 50px;
+    min-width: fit-content;
+}
+
+#ProfilePhoto {
+    border-radius: 50%;
+}
+
+.editBtn {
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+.Icon {
+    transform: scaleX(-1);
+    background-color: #4699C2;
+    color: white;
+    height: 25px;
+    width: 25px;
+    max-height: 25px;
+    max-width: 25px;
+    border-radius: 50px;
+    position: relative;
+    top: -50px;
+    left: 45px;
+}
+
+.mainInfo {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+#UserName {
+    justify-content: center;
+}
+
+.blogsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    width: 75%;
+    height: 500px;
+    min-width: fit-content;
+}
