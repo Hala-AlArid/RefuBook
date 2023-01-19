@@ -23,5 +23,6 @@ function ProfileInfo() {
             </Carousel>
         </div>
     );
+
 }
 export default ProfileInfo;
