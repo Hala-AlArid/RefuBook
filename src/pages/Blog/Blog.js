@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import NavBar from '../../components/NavBar/NavBar';
