@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Profile from './pages/Profile/Profile';
 import Blog from './pages/Blog/Blog';
+import SingleBlogPage from './pages/Blog/SingleBlogPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="signup" element={<SignUp />} />
       <Route path="signin" element={<SignIn />} />
       <Route path="blog" element={<Blog />} />
+      <Route path="blog/:id" element={<SingleBlogPage />} />
       <Route path="contact" element={<Contact />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="profile" element={<Profile />} />
