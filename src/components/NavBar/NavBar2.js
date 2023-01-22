@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-
+import { NavLink, useNavigate } from 'react-router-dom';
 import Logo from '../../images/Small.png'
 import Refubook from '../../images/Refubook.png'
 
 function NavBar2() {
   const [navbar, setNavbar] = useState(false);
+
+  const navigate = useNavigate();
+
+  const signout =()=>{
+    navigate('/');
+    localStorage.clear();
+}
+
   return (
     <nav className="text-refubook-blue px-2 sm:px-4 py-2.5 rounded m-3">
       <div className="flex flex-wrap items-center justify-between mx-auto">
@@ -51,7 +58,7 @@ function NavBar2() {
               <NavLink to="/profile" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>My Account</NavLink>
               </li>
               <li>
-              <NavLink to="/signout" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Sign out</NavLink>
+              <NavLink onClick={signout} className="text-slate-400 hover:text-sky-600 font-semibold">Sign out</NavLink>
               </li>
             </ul>
           </div>
@@ -64,13 +71,13 @@ function NavBar2() {
               <NavLink to="/" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Home</NavLink>
               </li>
               <li>
-              <NavLink to="/about" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Write</NavLink>
+              <NavLink to="/write" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Write</NavLink>
               </li>
               <li>
-              <NavLink to="/blog" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>My Account</NavLink>
+              <NavLink to="/profile" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>My Account</NavLink>
               </li>
               <li>
-              <NavLink to="/contact" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Sign out</NavLink>
+              <NavLink onClick={signout} className="text-slate-400 hover:text-sky-600 font-semibold">Sign out</NavLink>
               </li>
             </ul>
         </div>
