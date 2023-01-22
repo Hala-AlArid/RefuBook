@@ -13,6 +13,9 @@ function SignIn() {
     signInWithPopup(auth,provider).then((data)=>{
         setValue(data.user.email)
         localStorage.setItem("email",data.user.email);
+        localStorage.setItem("username",data.user.displayName);
+        localStorage.setItem("profile_pic",data.user.photoURL);
+        localStorage.setItem("id",data.user.uid);
         navigate("/profile");
     });
     
@@ -22,15 +25,16 @@ const handleFBClick =()=>{
   signInWithPopup(auth,FBprovider).then((data)=>{
       setValue(data.user.email)
       localStorage.setItem("email",data.user.email);
+      localStorage.setItem("username",data.user.displayName);
+      localStorage.setItem("profile_pic",data.user.photoURL);
+      localStorage.setItem("id",data.user.uid);
       navigate("/profile");
   });
   
 }
 
   useEffect(()=>{
-      setValue(localStorage.getItem('email'));
-      console.log(value);
-    
+      setValue(localStorage.getItem('email')); 
 })
 
   return (

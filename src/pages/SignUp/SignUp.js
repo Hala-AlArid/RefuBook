@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import {auth, provider, FBprovider} from "../../firebase/firebase";
 import NavBar from "../../components/NavBar/NavBar";
 
-function SignIn() {
+function SignUp() {
 
   const [value,setValue] = useState('');
   const navigate = useNavigate();
@@ -13,6 +13,9 @@ function SignIn() {
     signInWithPopup(auth,provider).then((data)=>{
         setValue(data.user.email)
         localStorage.setItem("email",data.user.email);
+        localStorage.setItem("username",data.user.displayName);
+        localStorage.setItem("profile_pic",data.user.photoURL);
+        localStorage.setItem("id",data.user.uid);
         navigate("/profile");
     });
     
@@ -20,8 +23,12 @@ function SignIn() {
 
 const handleFBClick =()=>{
   signInWithPopup(auth,FBprovider).then((data)=>{
-      setValue(data.user.email)
+      setValue(data.user.email);
+      console.log(data.user);
       localStorage.setItem("email",data.user.email);
+      localStorage.setItem("username",data.user.displayName);
+      localStorage.setItem("profile_pic",data.user.photoURL);
+      localStorage.setItem("id",data.user.uid);
       navigate("/profile");
   });
   
@@ -91,4 +98,4 @@ const handleFBClick =()=>{
   );
 }
 
-export default SignIn;
+export default SignUp;
