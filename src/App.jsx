@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Profile from './pages/Profile/Profile';
 import Blog from './pages/Blog/Blog';
+import WriteBlog from "./components/WriteBlog/WriteBlog"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="contact" element={<Contact />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="profile" element={<Profile />} />
+      <Route path="writeblog" element={<WriteBlog />} />
     </Routes>
   );
 }

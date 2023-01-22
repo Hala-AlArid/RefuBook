@@ -4,7 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import NavBar from "../NavBar/NavBar";
 import Img from './FormImg.png';
 import './ContactForm.css';
-
+ 
 function ContactForm() {
   return (
     <div className="FormBody bg-[#e9fbff] flex flex-col gap-14 justify-center items-center">
