@@ -7,10 +7,10 @@ import Refubook from '../../images/Refubook.png'
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="text-refubook-blue px-2 sm:px-4 py-2.5 rounded m-3">
+    <nav className="w-[100%] text-refubook-blue px-2 sm:px-4 py-2.5 rounded m-3">
       <div className="flex flex-wrap items-center justify-between mx-auto">
         <div className="flex justify-between">
-          <NavLink to="/home" className="flex items-center">
+          <NavLink to="/" className="flex items-center">
             <img className="px-4 justify-self-end" src={Logo} alt='logo'/>
                 <img className="p-0 justify-self-start" src={Refubook} alt='logo'/>
           </NavLink>
@@ -40,7 +40,7 @@ function NavBar() {
             </svg>
           </button>
           <div className="hidden md:block md:w-auto">
-            <ul className="flex flex-col items-center p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0 md:bg-white ">
+            <ul className="flex flex-col items-center p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0 ">
               <li>
               <NavLink to="/" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Home</NavLink>
               </li>
