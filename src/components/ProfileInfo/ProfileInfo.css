@@ -1,6 +1,8 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
 .ProfileBody {
-    background: rgb(238,252,255);
-    background: linear-gradient(72deg, rgba(238,252,255,1) 37%, rgba(255,255,255,1) 38%);    display: flex;
+    background: rgb(38, 116, 133);
+    background: linear-gradient(72deg, rgba(238,252,255,1) 37%, rgba(255,255,255,1) 38%);    
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -37,7 +39,13 @@
     top: -50px;
     left: 45px;
 }
-
+.outerDiv{
+    width: 100%;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .mainInfo {
     margin-top: 150px;
     display: flex;
@@ -59,4 +67,87 @@
     width: 75%;
     height: 500px;
     min-width: fit-content;
+}
+form{
+    display: flex;
+    flex-flow: column wrap;
+}
+*{
+    min-width: fit-content;
+}
+
+
+.form{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content !important;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200%;
+    padding: 5px;
+}
+.data{
+    display: inline !important;
+    width: 45% !important;
+    margin-bottom: 15px;
+}
+.fullLine{
+    width: 100% !important;
+}
+h3{
+    color: #4699C2;
+}
+input[type = "text"]{
+    margin: 5px;
+    width: 100%;
+    background-color: transparent;    
+    border: 1px solid black;
+    margin: 5px;
+    height: 70%;
+    border-radius: 10px;
+    border: 0.5px solid rgba(88, 88, 88, 0.433);
+    min-width: 0px;
+}
+#cancel, #save{
+    background-color: #4699C2;
+    width: 15%;
+    height: 50px;
+    margin: 15px;
+    font-size: large;
+    font-weight: 450;
+    border-radius: 40px;
+}
+#save{
+    color: white;
+}
+#cancel{
+    background-color: transparent;
+    color: #4699C2;
+    border: 1px solid #4699C2;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: fit-content;
+}
+
+@media screen and (max-width: 800px)  {
+    .row{
+        flex-direction: column;
+    }
+    input[type = "text"]{
+        height: 50px;
+    }
+    #cancel, #save{
+        width: 30%;
+    }
+    .btns{
+        flex-direction: row;
+    }
 }
