@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.1",
+    "emailjs-com": "^3.2.0",
     "firebase": "^9.15.0",
     "flowbite": "^1.5.5",
     "flowbite-react": "^0.3.7",
@@ -60,5 +61,5 @@
     "postcss": "^8.4.17",
     "prettier": "2.7.1",
     "tailwindcss": "^3.1.8"
-  } 
+  }
 }

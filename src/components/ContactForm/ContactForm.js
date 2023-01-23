@@ -1,15 +1,30 @@
 import React from 'react';
 import { BsTwitter, BsInstagram} from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import emailjs from "emailjs-com";
 import NavBar from "../NavBar/NavBar";
 import Img from './FormImg.png';
 import './ContactForm.css';
 
-function ContactForm() {
+
+export function SendEmail (e){
+  e.preventDefault();
+
+    emailjs.sendForm ('service_g6dc96u', 'template_uizz26h', e.target, 'RE3pTEL2pqWmaER1F')
+      .then((result) => {
+          console.log(result.text);
+          window.alert("Your Message was successfully sent to Refubook Team!")
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+};
+
+export function ContactForm() {
   return (
-    <div className="FormBody bg-[#e9fbff] flex flex-col gap-14 justify-center items-center">
+    <div className="FormBody bg-[#e9fbff] p-6 flex flex-col justify-center items-center">
       <NavBar/>
-      <div className="Content flex justify-center mt-16">
+      <div className="Content flex justify-center ">
         <div>
         <h1>Get in Touch</h1>
         <h3>
@@ -17,11 +32,17 @@ function ContactForm() {
           with the introduction.
         </h3>
         <br />
-        <form id="form">
+        <form id="form" onSubmit={SendEmail} className='grid gap-y-2'>
+          <h3>Name</h3>
+          <input name="name" id="name" type="text" placeholder="Name" className='pl-3 pt-2 pb-2 rounded-xl'/>
           <h3>Email</h3>
-          <input id="email" type="text" placeholder="    hello@gmail.com" />
-          <input id="message" type="text" placeholder="    Message" />
-          <input id="submit" type="submit" value="Send" />
+          <input name="email" id="email" type="text" placeholder="Email" className='pl-3 pt-2 pb-2 rounded-xl'/>
+          <h3>Subject</h3>
+          <input name="subject" id='subject' type="text" placeholder='Subject' className='pl-3 pt-2 pb-2 rounded-xl'/>
+          <h3>Message</h3>
+          <textarea name="message" id="message" type="text" placeholder='Message' className='pl-3 pt-2 pb-2 rounded-xl'/>
+          <button id="submit" type="submit" value="Send message" 
+          className='bg-[#4699c2] w-[150px] text-white border-2 border-[#4699c2] rounded-2xl p-1  hover:text-[#4699c2] hover:bg-white'>Send</button >
         </form>
         <div className="IconsList">
           <BsTwitter className="Icon" />
@@ -34,4 +55,3 @@ function ContactForm() {
     </div>
   );
 }
-export default ContactForm;
