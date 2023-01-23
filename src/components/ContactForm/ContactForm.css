@@ -23,6 +23,7 @@
   color: #8b8f9c;
   display: flex;
   width: 80%;
+  margin: 0;
 }
 .Content form h3 {
   color: #8b8f9c;
@@ -35,29 +36,14 @@
   align-items: baseline;
 }
 #email,
-#message {
+#message, #name, #subject {
   border: 0.5px solid;
   border-radius: 10px;
   border-color: #8b8f9c6b;
   width: 80%;
   margin: 10px;
 }
-#email {
-  height: 10vh;
-}
-#message {
-  height: 40vh;
-  margin-top: 5px;
-}
-#submit {
-  background-color: #4699c2;
-  color: white;
-  width: 18vh;
-  height: 5vh;
-  border-radius: 40px;
-  margin-bottom: 10px;
-  margin-top: 15px;
-}
+
 .IconsList {
   display: flex;
   flex-flow: row wrap;
@@ -82,12 +68,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .Content h1 {
     font-size: 5vh;
   }
   .Content h3 {
     text-align: center;
+    margin: 0;
+    width: 100%;
   }
   #form {
     justify-content: center;

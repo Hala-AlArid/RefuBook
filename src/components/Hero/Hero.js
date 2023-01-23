@@ -2,23 +2,34 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Hero.css";
 import homepage from "../../images/homepage.png";
+import NavBar from "../../components/NavBar/NavBar";
 
 function Hero (){
-    return <div className=" w-full">
-    
-        <div className="w-4/5 m-auto grid grid-cols-2 pt-28">
-        <div className="grid grid-cols-1">
-            <h1 className="text-7xl font-black refubook pb-2">Refubook</h1>
-            <h2 className="text-6xl font-medium express pb-6 w-60 text-rose-300">Express Freely</h2>
-            <p className="text-base font-light w-80">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+    return(
+    <div className="bg-[#70CDD6] md:pt-6 md:p-6 md:pr-12 md:pl-12 p-2">
+        
+        <div className="md:h-full bg-white flex flex-col gap-2 justify-center items-center shadow-2xl shadow-gray-500 rounded-3xl md:p-6">
+        <NavBar/>
+
+        <div className="flex md:flex-row flex-col-reverse justify-center gap-2">
+            
+        <div className="flex flex-col md:items-start justify-center gap-2 md:text-start text-center m-auto md:mt-0">
+            <h1 className="md:text-7xl text-3xl font-black refubook">Refubook</h1>
+            <h2 className="md:text-6xl md:w-[80%] text-2xl font-medium express text-rose-300 md:mb-2">Express Freely</h2>
+            <p className="text-sm m-2 md:w-[50%]">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</p>
+            
            
-            <NavLink to="/signup"><button type="submit" className="button sm:w-28 md:w-32 text-center text-xl font-bold text-white py-2 px-6 rounded-full bg-sky-600 hover:text-sky-600 hover:bg-white hover:border-sky-600 border">Sign Up</button></NavLink>
+            <NavLink to="/signup"><button type="submit" className="button mb-4 sm:w-28 md:w-32 text-center md:text-xl font-bold text-white py-2 px-6 rounded-full bg-sky-600 hover:text-sky-600 hover:bg-white hover:border-sky-600 border">Sign Up</button></NavLink>
         </div>
+
         <div>
-            <img src={homepage} alt="home page graphic"/>
+            <img className="md:w-[80%] w-[50%] m-auto" src={homepage} alt="home page graphic"/>
+        </div>
+
         </div>
         </div>
     </div>
+    )
 };
 
 export default Hero;

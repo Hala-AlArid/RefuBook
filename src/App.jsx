@@ -6,22 +6,25 @@ import About from './pages/About/About';
 import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
 import Contact from './pages/Contact/Contact';
-import Dashboard from './pages/Dashboard/Dashboard';
 import Profile from './pages/Profile/Profile';
+import Blog from './pages/Blog/Blog';
+import Write from './pages/Write/Write';
+import SingleBlogPage from './pages/Blog/SingleBlogPage';
 
 function App() {
-    return (
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="about" element={<About/>}/>
-            <Route path="signup" element={<SignUp/>}/>
-            <Route path="signin" element={<SignIn/>}/>
-            <Route path="contact" element={<Contact/>}/>
-            <Route path="dashboard" element={<Dashboard/>}/>
-            <Route path="profile" element={<Profile/>}/>
-            <Route exact path="/profile/edit" element={<Contact/>}/>
-        </Routes>
-    );
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="signup" element={<SignUp />} />
+      <Route path="signin" element={<SignIn />} />
+      <Route path="blog" element={<Blog />} />
+      <Route path="blog/:id" element={<SingleBlogPage />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="profile" element={<Profile />} />
+      <Route path="write" element={<Write />} />
+    </Routes>
+  );
 }
 
 export default App;

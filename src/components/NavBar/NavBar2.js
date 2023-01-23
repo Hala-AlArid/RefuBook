@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-
+import { NavLink, useNavigate } from 'react-router-dom';
 import Logo from '../../images/Small.png'
 import Refubook from '../../images/Refubook.png'
 
-function NavBar() {
+function NavBar2() {
   const [navbar, setNavbar] = useState(false);
+
+  const navigate = useNavigate();
+
+  const signout =()=>{
+    navigate('/');
+    localStorage.clear();
+}
+
   return (
-    <nav className="w-[100%] text-refubook-blue px-2 sm:px-4 py-2.5 rounded m-3">
+    <nav className="text-refubook-blue px-2 sm:px-4 py-2.5 rounded m-3">
       <div className="flex flex-wrap items-center justify-between mx-auto">
         <div className="flex justify-between">
           <NavLink to="/" className="flex items-center">
@@ -45,16 +52,13 @@ function NavBar() {
               <NavLink to="/" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Home</NavLink>
               </li>
               <li>
-              <NavLink to="/about" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>About</NavLink>
+              <NavLink to="/write" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Write</NavLink>
               </li>
               <li>
-              <NavLink to="/blog" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Blog</NavLink>
+              <NavLink to="/profile" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>My Account</NavLink>
               </li>
               <li>
-              <NavLink to="/contact" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Contact</NavLink>
-              </li>
-              <li>
-              <NavLink to="/signup"><button type="submit" className="button sm:w-28 md:w-32 text-center text-white py-2 px-6 rounded-full bg-sky-600 hover:text-sky-600 hover:bg-white hover:border-sky-600 border">Sign Up</button></NavLink>
+              <NavLink onClick={signout} className="text-slate-400 hover:text-sky-600 font-semibold">Sign out</NavLink>
               </li>
             </ul>
           </div>
@@ -67,16 +71,13 @@ function NavBar() {
               <NavLink to="/" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Home</NavLink>
               </li>
               <li>
-              <NavLink to="/about" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>About</NavLink>
+              <NavLink to="/write" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Write</NavLink>
               </li>
               <li>
-              <NavLink to="/blog" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Blog</NavLink>
+              <NavLink to="/profile" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>My Account</NavLink>
               </li>
               <li>
-              <NavLink to="/contact" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Contact</NavLink>
-              </li>
-              <li>
-              <NavLink to="/signup" className={(navData) => navData.isActive? "text-sky-600 font-semibold" : "text-slate-400 hover:text-sky-600 font-semibold"}>Sign Up</NavLink>
+              <NavLink onClick={signout} className="text-slate-400 hover:text-sky-600 font-semibold">Sign out</NavLink>
               </li>
             </ul>
         </div>
@@ -86,4 +87,4 @@ function NavBar() {
     </nav>
   );
 }
-export default NavBar;
+export default NavBar2;

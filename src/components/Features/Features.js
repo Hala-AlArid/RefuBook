@@ -1,6 +1,6 @@
 import React from 'react';
 // import Carousel from 'flowbite/src/components/carousel';
-import Carousel from "react-elastic-carousel";
+import Carousel from 'react-elastic-carousel';
 import { MdStars } from 'react-icons/md';
 // import logo from '../../../logo512.png';
 import bg from "../../images/features.png"
