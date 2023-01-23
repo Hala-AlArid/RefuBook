@@ -115,7 +115,7 @@ input[type = "text"]{
 }
 #cancel, #save{
     background-color: #4699C2;
-    width: 15%;
+    width: 15vw;
     height: 50px;
     margin: 15px;
     font-size: large;
