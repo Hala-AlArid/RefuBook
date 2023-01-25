@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BsTwitter, BsInstagram} from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
@@ -22,10 +23,10 @@ export function SendEmail (e){
 
 export function ContactForm() {
   return (
-    <div className="FormBody bg-[#e9fbff] p-6 flex flex-col justify-center items-center">
+    <div className="FormBody">
       <NavBar/>
-      <div className="Content flex justify-center ">
-        <div>
+      <img src={Img} alt="illustration" />
+      <div className="Content">
         <h1>Get in Touch</h1>
         <h3>
           For further inquiries, contact RefuBook team directly! We will reply to you as soon as possible.
@@ -48,9 +49,8 @@ export function ContactForm() {
           <BsInstagram className="Icon" />
           <FaFacebookF className="Icon" />
         </div>
-        </div>
-        <div><img src={Img} alt="illustration mt-16" /></div>
       </div>
     </div>
   );
 }
+export default ContactForm;
