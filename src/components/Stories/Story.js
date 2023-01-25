@@ -2,7 +2,7 @@ import React from "react";
 
 function Story(props){ 
     return(
-            <div key={props.id} id={props.id} className="flex md:flex-row flex-col gap-2 justify-center  p-4 mt-4 border-2 border-[#4699C2] hover:border-2 hover:border-sky-700 hover:cursor-pointer">
+            <div key={props.id} id={props.id} className="flex md:flex-row flex-col gap-2 justify-center  p-4 mt-4 border-2 border-[#4699C2] hover:bg-sky-700 hover:cursor-pointer">
 
                 <div className="flex justify-center items-center md:w-[300px] w-[100%]">
                     <img alt='Story' src={props.img}/>

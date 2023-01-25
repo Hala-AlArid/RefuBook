@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import ProfileInfo from "../../components/ProfileInfo/ProfileInfo";
 import { useNavigate } from 'react-router-dom';
-import NavBar2 from "../../components/NavBar/NavBar2";
+
 function Profile(){
 
     const navigate = useNavigate();
@@ -12,13 +13,13 @@ function Profile(){
       });
 
     return (
-        <div>
-            <NavBar2/>
-            <h3>welcome {localStorage.getItem("username")}</h3>
-            </div>
+        <div className='Page'>
+            <ProfileInfo/>
+        </div>            
 
         
     )
 }
 
 export default Profile;
+

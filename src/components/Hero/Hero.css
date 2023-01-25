@@ -10,6 +10,7 @@
     background-color: #3F7CA5;
 };
 
-.herotext{
+#herotext{
     font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
 }

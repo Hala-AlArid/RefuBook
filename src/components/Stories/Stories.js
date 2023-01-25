@@ -39,7 +39,7 @@ const StoryList = () => {
         <div>
     {
       blogs.docs.map((doc, index) => (
-       (index == 0 || index == 2)? <Story key={doc.id} id={doc.id} img = {doc.data().image} language={doc.data().language} title ={doc.data().title} username={doc.data().username} profile_pic = {doc.data().profile_pic} date = {doc.data().created_at}/> : null
+       (index == 0 || index == 1)? <Story key={doc.id} id={doc.id} img = {doc.data().image} language={doc.data().language} title ={doc.data().title} username={doc.data().username} profile_pic = {doc.data().profile_pic} date = {doc.data().created_at}/> : null
     ))
     }
         </div>

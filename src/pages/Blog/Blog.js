@@ -69,10 +69,10 @@ import { db } from "../../firebase/firebase";
                 </select>
         </div>
 </div>
-<div className='flex flex-wrap gap-6 justify-center items-center text-center mb-4'>
+<div className='flex flex-wrap gap-6 justify-center items-center text-center mb-24'>
       {blogs.docs.map((doc) => (
         <div onClick={() => {handleClick(doc.id, doc.data().title, doc.data().content, doc.data().image, doc.data().username, doc.data().profile_pic, doc.data().created_at, doc.data().category)}} key={doc.id} id={doc.id} className="rounded border border-gray-300 overflow-hidden shadow-xl p-2 hover:cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-        <div className="border border-gray-300 w-[200px] h-[200px] flex justify-center items-center text-center"><img src={doc.data().image}/></div>
+        <div className="m-auto w-[200px] h-[200px] flex justify-center items-center text-center"><img src={doc.data().image}/></div>
         <div className="px-6 py-4">
           <div className="font-bold md:text-xl mb-2">{doc.data().title}</div>
         </div>
