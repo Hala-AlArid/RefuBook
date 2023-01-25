@@ -9,3 +9,7 @@ button.rec-dot:focus {
     box-shadow: 0 0 1px 3px #4699C2;
     background-color: #4699C2;
 }
+
+.title, .username, .date, .content{
+    font-family: 'Fira Sans', sans-serif;
+}

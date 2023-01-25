@@ -36,8 +36,6 @@ const handleFBClick =()=>{
 
   useEffect(()=>{
       setValue(localStorage.getItem('email'));
-      console.log(value);
-    
 })
 
   return (

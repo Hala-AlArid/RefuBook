@@ -9,7 +9,7 @@ import Contact from './pages/Contact/Contact';
 import Profile from './pages/Profile/Profile';
 import Blog from './pages/Blog/Blog';
 import Write from './pages/Write/Write';
-import SingleBlogPage from './pages/Blog/SingleBlogPage';
+
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
       <Route path="signup" element={<SignUp />} />
       <Route path="signin" element={<SignIn />} />
       <Route path="blog" element={<Blog />} />
-      <Route path="blog/:id" element={<SingleBlogPage />} />
       <Route path="contact" element={<Contact />} />
       <Route path="profile" element={<Profile />} />
       <Route path="write" element={<Write />} />

@@ -1,19 +1,21 @@
-.FooterDiv {
+/* .FooterDiv {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-flow: row wrap;
   min-height: 25vh;
   max-height: 20vh;
-  background-color: rgba(230, 229, 229, 0.41);
-}
-.Footer_Headings {
+  width: 100%;
+} */
+
+/* .Footer_Headings {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-flow: row wrap;
   width: 25%;
-}
+} */
+
 .Footer_Headings h3 {
   color: #9dafbd;
 }

@@ -28,19 +28,18 @@ export function ContactForm() {
         <div>
         <h1>Get in Touch</h1>
         <h3>
-          But Brooke Chaffin and Catherine Connors are looking to change that
-          with the introduction.
+          For further inquiries, contact RefuBook team directly! We will reply to you as soon as possible.
         </h3>
         <br />
         <form id="form" onSubmit={SendEmail} className='grid gap-y-2'>
           <h3>Name</h3>
-          <input name="name" id="name" type="text" placeholder="Name" className='pl-3 pt-2 pb-2 rounded-xl'/>
+          <input required name="name" id="name" type="text" placeholder="Name" className='pl-3 pt-2 pb-2 rounded-xl'/>
           <h3>Email</h3>
-          <input name="email" id="email" type="text" placeholder="Email" className='pl-3 pt-2 pb-2 rounded-xl'/>
+          <input required name="email" id="email" type="text" placeholder="Email" className='pl-3 pt-2 pb-2 rounded-xl'/>
           <h3>Subject</h3>
-          <input name="subject" id='subject' type="text" placeholder='Subject' className='pl-3 pt-2 pb-2 rounded-xl'/>
+          <input required name="subject" id='subject' type="text" placeholder='Subject' className='pl-3 pt-2 pb-2 rounded-xl'/>
           <h3>Message</h3>
-          <textarea name="message" id="message" type="text" placeholder='Message' className='pl-3 pt-2 pb-2 rounded-xl'/>
+          <textarea required name="message" id="message" type="text" placeholder='Message' className='pl-3 pt-2 pb-2 rounded-xl'/>
           <button id="submit" type="submit" value="Send message" 
           className='bg-[#4699c2] w-[150px] text-white border-2 border-[#4699c2] rounded-2xl p-1  hover:text-[#4699c2] hover:bg-white'>Send</button >
         </form>

@@ -7,7 +7,7 @@ import Refubook from '../../images/Refubook.png'
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="w-[100%] text-refubook-blue px-2 sm:px-4 py-2.5 rounded m-3">
+    <nav className="w-[100%] text-refubook-blue px-2 sm:px-4 rounded m-3">
       <div className="flex flex-wrap items-center justify-between mx-auto">
         <div className="flex justify-between">
           <NavLink to="/" className="flex items-center">

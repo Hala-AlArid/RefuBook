@@ -14,7 +14,7 @@ function NavBar2() {
 }
 
   return (
-    <nav className="text-refubook-blue px-2 sm:px-4 py-2.5 rounded m-3">
+    <nav className="text-refubook-blue px-2 sm:px-4 rounded m-3">
       <div className="flex flex-wrap items-center justify-between mx-auto">
         <div className="flex justify-between">
           <NavLink to="/" className="flex items-center">

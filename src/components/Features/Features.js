@@ -9,22 +9,22 @@ const FEATURES = [
   {
     title: 'Reliability',
     description:
-      'Certe, inquam, pertinax non recusandae itaque earum  rerum facilis est consec. Laudem et impetus quo aut in gravissimo bello animadversionis.',
+      'You can count on us for delivering the most reliable information possible. Our team filters all entered content to ensure the best user experience.',
   },
   {
     title: 'Motivation',
     description:
-      'Certe, inquam, pertinax non recusandae itaque earum  rerum facilis est consec. Laudem et impetus quo aut in gravissimo bello animadversionis.',
+      'You have nothing to worry about. RefuBook will guide you through all the stages of grief when arriving to a new place as a refugee.',
   },
   {
     title: 'Efficiency',
     description:
-      'Certe, inquam, pertinax non recusandae itaque earum  rerum facilis est consec. Laudem et impetus quo aut in gravissimo bello animadversionis.',
+      'Our users were able to get help to finish their paper work, find jobs, relocate safely and get answers for all of their questions.',
   },
   {
     title: 'Creativity',
     description:
-      'Certe, inquam,  pertinax non recusandae itaque earum   rerum facilis est consec. Laudem et impetus quo aut in gravissimo bello animadversionis.',
+      "Not only can you benefit from RefuBook's sources but also you can add to them! Help other RefuBook users using our blogging tools.",
   },
 ];
 function Features() {
