@@ -1,0 +1,151 @@
+
+
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+.ProfileBody {
+    background: rgb(38, 116, 133);
+    background: linear-gradient(72deg, rgba(238,252,255,1) 37%, rgba(255,255,255,1) 38%);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.3);
+    scale: 0.9;
+    width: 100%;
+}
+
+#ProfilePhoto {
+    border-radius: 50%;
+}
+
+.editBtn {
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+.Icon {
+    transform: scaleX(-1);
+    background-color: #4699C2;
+    color: white;
+    height: 25px;
+    width: 25px;
+    max-height: 25px;
+    max-width: 25px;
+    border-radius: 50px;
+    position: relative;
+    top: -50px;
+    left: 45px;
+}
+.outerDiv{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainInfo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+#UserName {
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    width: 75%;
+    height: 500px;
+    min-width: fit-content;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.form{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content !important;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200%;
+    padding: 5px;
+}
+.data{
+    display: inline !important;
+    width: 45% !important;
+    margin-bottom: 15px;
+}
+.fullLine{
+    width: 100% !important;
+}
+
+/* h3{
+    color: #4699C2;
+} */
+
+input[type = "text"]{
+    margin: 5px;
+    width: 100%;
+    background-color: transparent;    
+    border: 1px solid black;
+    margin: 5px;
+    height: 70%;
+    border-radius: 10px;
+    border: 0.5px solid rgba(88, 88, 88, 0.433);
+    min-width: 0px;
+}
+#cancel, #save{
+    background-color: #4699C2;
+    width: 15vw;
+    height: 50px;
+    margin: 15px;
+    font-size: large;
+    font-weight: 450;
+    border-radius: 40px;
+}
+#save{
+    color: white;
+}
+#cancel{
+    background-color: transparent;
+    color: #4699C2;
+    border: 1px solid #4699C2;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: fit-content;
+}
+
+@media screen and (max-width: 800px)  {
+    .row{
+        flex-direction: column;
+    }
+    input[type = "text"]{
+        height: 50px;
+    }
+    #cancel, #save{
+        width: 30%;
+    }
+    .btns{
+        flex-direction: row;
+    }
+}

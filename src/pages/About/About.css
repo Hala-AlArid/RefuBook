@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.About container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    text-align: center;
+}
+
+.About h1, p, h3, button{
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-header{
+    background-image: url(https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+    );
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 75vh;
+}
+
+.story h1, .team h1{
+    color: rgb(2, 85, 148);
+}
+
+.team{
+    background: linear-gradient(#EAFBFF, #E5FAFF);
+}
+
+
+.team-btns button{
+    color: #025594;
+    padding: 10px;
+    border-radius: 30px;
+    width: 120px;
+}
+
+.team-btns button:hover{
+    background-color: #025594;
+    color: white;
+}
+
+
+.call-to-action h1{
+    color: #026FC2;
+    font-size: 32px;
+}
+
+.call-to-action p{
+    color: #9DAFBD;
+    font-size: 18px;
+}
+
+.call-to-action button{
+    background-color: #4699C2;
+    width: 150px;
+    color: white;
+    border-radius: 30px;
+    border: 2px solid #4699C2;
+    padding: 10px;
+}
+
+.call-to-action button:hover{
+    background-color: white;
+    border-color: #4699C2;
+    color: #4699C2;
+}
+
+.our{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.team h3{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .About container{
+        padding: 10px;
+    }
+
+    .story h1, .team h1{
+        font-size: 10vw;
+    }
+
+    .call-to-action h1{
+        font-size: 6vw;
+    }
+
+    .about-header{
+        height: 50vh;
+        background-attachment:scroll;
+    }
+
+    .About p{width: 100%;}
+}
+
+@media only screen and (max-width: 470px){
+    .about-header{
+        height: 30vh;
+    }
+}
