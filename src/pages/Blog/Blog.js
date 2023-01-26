@@ -57,7 +57,7 @@ import { db } from "../../firebase/firebase";
     </div>
 </div>
       <div className='md:pr-6 md:flex md:justify-end md:w-[100%]'>
-           <div className="flex flex-col md:flex-row justify-center items-center gap-2">
+           {/* <div className="flex flex-col md:flex-row justify-center items-center gap-2">
               <label>Sort By: </label>
                 <select className="mx-1 border-2 border-sky-700 w-32 text-center rounded-full">
                      <option>All</option>
@@ -67,7 +67,7 @@ import { db } from "../../firebase/firebase";
                      <option>Documentation</option>
                      <option>Education</option>
                 </select>
-        </div>
+        </div> */}
 </div>
 <div className='flex flex-wrap gap-6 justify-center items-center text-center mb-24'>
       {blogs.docs.map((doc) => (

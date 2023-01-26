@@ -56,7 +56,7 @@ function WriteBlogForm(){
         const content = data.get("content");
         const category = data.get("category");
         const user_email = localStorage.getItem("email");
-        const image = "https://media.istockphoto.com/id/1128826884/vector/no-image-vector-symbol-missing-available-icon-no-gallery-for-this-moment.jpg?b=1&s=170667a&w=0&k=20&c=EX1u-E9kO0qgWw2klo7H9CLM3UdSNavylI43VmbeXkE=";
+        const image = "https://www.intelligenttransport.com/wp-content/uploads/cash-free.jpg";
         const username = localStorage.getItem("username");
         const profile_pic = localStorage.getItem("profile_pic");
         const status = data.get("status");

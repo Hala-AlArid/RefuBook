@@ -33,7 +33,7 @@ const PartnersList = () => {
     return (
     <Carousel showArrows={false} enableAutoPlay className="">
             {partners.docs.map((doc) => (
-                <Partner key={doc.id} id={doc.id} website = {doc.data().partner_website} img = {doc.data().partner_img} />
+                <Partner key={doc.id} id={doc.id} website = {doc.data().partner_website} img = {doc.data().partner_img} name= {doc.data().partner_name} />
             ))}
     </Carousel>
 

@@ -20,7 +20,7 @@ function Team(){
       }
  
     return (
-        <div>
+        <div className="w-[75%] flex flex-col md:flex-row flex-wrap justify-center items-center gap-8">
             {team.docs.map((doc) => (
             <TeamMember key={doc.id} id={doc.id} name = {doc.data().member_name} position = {doc.data().position}/>
             ))}
