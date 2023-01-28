@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 import { storage } from "../../firebase/firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { db } from "../../firebase/firebase";
-import {collection, query as fsQuery, where, addDoc} from "firebase/firestore";
+import {collection, addDoc} from "firebase/firestore";
+import { uuidv4 } from "@firebase/util";
 
 function WriteBlogForm(){
     const [url, setUrl] = useState(null);
     const [img, setImage] = useState(null);
+    const [fileType, setFileType] = useState(null);
 
     const handleImageChange = (e) =>{
       const file = e.target.files[0];
       const type = file.type;
+      
         if(file){
             setImage(file);
         }
@@ -20,18 +22,19 @@ function WriteBlogForm(){
 
         fileReader.onload = function(ev){
           document.getElementById("preview").setAttribute("src", ev.target.result);
+          setUrl(ev.target.result);
         }
         fileReader.readAsDataURL(file);
       
-        addImage(file, type);
+        setFileType(type);
     }
 
-    const addImage = (f, type) =>{
+    const addImage = () =>{
 
-        const imageRef = ref(storage, `images/${f.name}`);
+        const imageRef = ref(storage, `images/${uuidv4()}`);
 
         const metadata = {
-          contentType: type,
+          contentType: fileType,
         };
 
         uploadBytes(imageRef, img, metadata).then(()=>{
@@ -47,7 +50,7 @@ function WriteBlogForm(){
       
     }
 
-    const addBlog = (e, url) =>{
+    const addBlog = (e) =>{
       const data = new FormData(e.currentTarget);
     
         e.currentTarget.reset();
@@ -56,10 +59,9 @@ function WriteBlogForm(){
         const content = data.get("content");
         const category = data.get("category");
         const user_email = localStorage.getItem("email");
-        const image = "https://www.intelligenttransport.com/wp-content/uploads/cash-free.jpg";
+        const image = url;
         const username = localStorage.getItem("username");
         const profile_pic = localStorage.getItem("profile_pic");
-        const status = data.get("status");
 
         var today = new Date();
         var year = today.getFullYear();
@@ -95,7 +97,8 @@ function WriteBlogForm(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addBlog(e, url);
+        addBlog(e);
+        addImage();
         document.getElementById("preview").setAttribute("src", " ");
       };
     

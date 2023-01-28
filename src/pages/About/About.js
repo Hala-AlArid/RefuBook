@@ -40,7 +40,7 @@ function About(){
                 <p className="w-2/4">RefuBook provides blogging tools with easy access for all its users. You can easily write your own experience 
                     and help others. RefuBook is a free portal that helps refugees and new arriving members in a new country.</p>
                     <p className="w-2/4">Get Started Today!</p>
-                    <NavLink to="/signup"><button type="submit" className="Footer_Buttons sm:w-28 md:w-32 text-center text-white p-1 rounded-full bg-sky-600 hover:text-sky-600 hover:bg-white hover:border-sky-600 border">Sign Up</button></NavLink>
+                    <NavLink to="/write"><button type="submit" className="Footer_Buttons sm:w-28 md:w-32 text-center text-white p-1 rounded-full bg-sky-600 hover:text-sky-600 hover:bg-white hover:border-sky-600 border">Write a Blog</button></NavLink>
             </container>
             <Footer/>
         </div>

@@ -43,11 +43,11 @@ export function ContactForm() {
           <button id="submit" type="submit" value="Send message" 
           className='bg-[#4699c2] w-[150px] text-white border-2 border-[#4699c2] rounded-2xl p-1  hover:text-[#4699c2] hover:bg-white'>Send</button >
         </form>
-        <div className="IconsList">
+        {/* <div className="IconsList">
           <BsTwitter className="Icon" />
           <BsInstagram className="Icon" />
           <FaFacebookF className="Icon" />
-        </div>
+        </div> */}
         </div>
         <div><img src={Img} alt="illustration mt-16" /></div>
       </div>
