@@ -5,5 +5,5 @@ base = "/"
 
 [[redirects]]
 from = "/*"
-to = "/index.js"
+to = "/index.jsx"
 status = 200
