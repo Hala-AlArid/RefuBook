@@ -1,9 +1,0 @@
-[build]
-command = "npm run build"
-publish = "/build"
-base = "/"
-
-[[redirects]]
-from = "/*"
-to = "/index.jsx"
-status = 200
